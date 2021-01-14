@@ -18,19 +18,22 @@ public class collectionTest02 {
         m.remove(1);
         System.out.println(m.size());
         System.out.println(m.replace(2, "world", "kitty"));
-/*        Set<Integer> s = m.keySet();
+/*      Set<Integer> s = m.keySet();
         Iterator<Integer> it = s.iterator();
         while (it.hasNext()) {
             Integer x = it.next();
-            String y = m.get(x);
-            System.out.println(x + "-->" + y);*/
+            String y = m.get(x);   //获取键所对应的Value
+            System.out.println(x + "-->" + y);
+*/
 /*
-    转换成Set在进行遍历 推荐使用这种
+    //转换成Set在进行遍历 推荐使用这种
+    //Set集合中的元素类型是Map.Entry
     Set<Map.Entry<Integer,String>> x=m.entrySet();
         for (Map.Entry<Integer,String> node:x) {
         System.out.println(node.getKey()+"="+node.getValue());
     }
 */
+        System.out.println(m.isEmpty());
         }
 
     }
