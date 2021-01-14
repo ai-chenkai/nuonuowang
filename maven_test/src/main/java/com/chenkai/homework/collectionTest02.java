@@ -1,5 +1,7 @@
 package com.chenkai.homework;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -25,16 +27,14 @@ public class collectionTest02 {
             String y = m.get(x);   //获取键所对应的Value
             System.out.println(x + "-->" + y);
 */
-/*
     //转换成Set在进行遍历 推荐使用这种
     //Set集合中的元素类型是Map.Entry
     Set<Map.Entry<Integer,String>> x=m.entrySet();
         for (Map.Entry<Integer,String> node:x) {
         System.out.println(node.getKey()+"="+node.getValue());
     }
-*/
         System.out.println(m.isEmpty());
+        System.out.println(m.hashCode()); //返回集合的哈希值
         }
-
     }
 
